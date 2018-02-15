@@ -6,23 +6,23 @@ package models;
  */
 public class CognitoIdentityIdToken {
     private String identityId;
-    private String token;
+    private String openIdToken;
 
     public CognitoIdentityIdToken(String identityId, String token){
         this.identityId = identityId;
-        this.token = token;
+        this.openIdToken = token;
     }
 
-    String getIdentityId() {
+    public String getIdentityId() {
         return identityId;
     }
 
-    String getToken() {
-        return token;
+    public String getOpenIdToken() {
+        return openIdToken;
     }
 
     @Override
     public String toString() {
-        return getIdentityId() + " : " + getToken();
+        return getIdentityId() + " : " + getOpenIdToken();
     }
 }

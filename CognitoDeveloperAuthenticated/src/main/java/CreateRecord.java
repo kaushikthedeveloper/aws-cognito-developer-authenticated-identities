@@ -26,7 +26,7 @@ public class CreateRecord {
 
     private final String identityId = configDetails.getIdentityId();
     private final String identityPoolId = environmentDetails.getIdentityPoolId();
-    private final String dataSetName = configDetails.getDataSetName();
+    private final String dataSetName = configDetails.getDataSetName();              //new DataSet to be created
     private final String recordKey = configDetails.getRecordKey();
     private final String recordValue = configDetails.getRecordValue();
 
