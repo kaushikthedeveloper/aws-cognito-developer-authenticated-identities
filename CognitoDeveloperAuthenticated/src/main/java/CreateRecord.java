@@ -103,7 +103,7 @@ public class CreateRecord {
                 .withDatasetName(dataSetName)
                 .withSyncSessionToken(syncSessionToken)
                 .withRecordPatches(recordPatch);
-        UpdateRecordsResult updateRecordsResult = amazonCognitoSyncClient.updateRecords(updateRecordsRequest);
+        amazonCognitoSyncClient.updateRecords(updateRecordsRequest);
     }
 
 
